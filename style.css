@@ -1,0 +1,91 @@
+/* Reset and Base Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Mode Select */
+.mode-select {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+.mode-select input {
+  margin-right: 5px;
+}
+
+/* Game Board Styling */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 15px;
+  margin: 20px 0;
+}
+
+/* Individual Cell Styling */
+.cell {
+  width: 120px;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.2s, background 0.3s;
+}
+
+.cell:hover {
+  transform: scale(1.05);
+  background: rgba(255, 255, 255, 0.25);
+}
+
+.cell img {
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+}
+
+/* Status Text */
+#status {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #f0f0f0;
+  font-weight: bold;
+}
+
+/* Restart Button */
+button {
+  padding: 12px 24px;
+  font-size: 1rem;
+  background-color: #00c6ff;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #0072ff;
+  transform: translateY(-2px);
+}
