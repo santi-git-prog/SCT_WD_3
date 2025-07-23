@@ -46,7 +46,7 @@ function handleCellClick(e) {
   makeMove(index, currentPlayer);
 
   if (checkWin()) {
-    statusText.textContent = currentPlayer === 'X' ? "You win!" : "Computer wins!";
+    statusText.textContent = currentPlayer === 'X' ? "Player X wins!" : "Player O wins!";
     isGameActive = false;
     return;
   }
